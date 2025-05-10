@@ -1,6 +1,6 @@
 {
     "application": {
-        "title": "Requirements Engineering Friend Tracker (FS2025)",
+        "title": "Béatrices Friend Tracker",
         "formList": [
             {
                 "id": "FriendForm",
@@ -19,6 +19,13 @@
                         "type": "text",
                         "name": "FirstName",
                         "width": 1,
+                        "required": true
+                    },
+                    {
+                        "id": "nickname", 
+                        "type": "text", 
+                        "name": "Nickname", 
+                        "width": 2, 
                         "required": true
                     },
                     {
@@ -131,6 +138,13 @@
                         "icon": "fa-cubes",
                         "color": "yellow",
                         "page": "locationspage"
+                    },
+                    {
+                    "type": "button", 
+                    "name": "Groups", 
+                    "icon": "fa-weixin", 
+                    "color": "wisteria", 
+                    "page": "groupspage" 
                     }
                 ]
             },
@@ -188,6 +202,23 @@
                         }
                     }
                 ]
+            },
+            {
+                        "id": "groupspage", 
+                        "elementList": [ 
+                            { 
+                                "type": "backbutton" 
+                            }, 
+                            { 
+                                "type": "newButton", 
+                                "name": "NewGroup", 
+                                "icon": "fa-weixin", 
+                                "color": "green", 
+                                "form": { 
+                                    "form": "GroupForm" 
+                                } 
+                            } 
+                        ]
             }
         ]
     }
